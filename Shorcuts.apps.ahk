@@ -18,22 +18,28 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 	return
 }
 
-#y::
-{
-	Run %customWorkingDir%\Libraries\AnyConnect.ahk "param1" "param2" "param3" "param4"
-	return
-}
-
 #t::
 {
 	Run, mstsc.exe /v:10.26.0.62
 	return
 }
 
+#y::
+{
+	Run, mstsc.exe /v:%rdpWork%
+	return
+}
+
+#u::
+{
+	Run %customWorkingDir%\Libraries\AnyConnect.ahk "param1" "param2" "param3" "param4"
+	return
+}
+
+
 
 #m::
 {
-	MsgBox test #m hotkey %appPathNpp%
-	MsgBox test #m hotkey %appPathKeePass%
+	MsgBox test #m hotkey: %testVar1%
 	return
 }

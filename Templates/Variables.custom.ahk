@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-appPathNpp = C:\Program Files (x86)\D_Disk
+testVar1=testVar1 custom value
 
 
 
